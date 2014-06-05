@@ -1,0 +1,312 @@
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End Reset*/
+/*--------------------------------GOOGLE CLONE CSS--------------------------*/
+
+/*sticky footer attempt*/
+html, body {
+	height:100%;
+}
+
+body {
+	font-family:Arial;
+	font-size:13px;
+	/*sticky footer attempt*/
+	margin:0px;
+	padding:0px;
+}
+
+div#wrapper {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	/*sticky footer attempt*/
+	margin:0px 0px -40px 0px;
+}
+
+/*---Header Section---*/
+header {
+	height:60px;
+	background-color:#fff;
+}
+
+header nav {
+	float:right;
+	min-width:300px;
+	height:50px;
+	margin-top:8px;
+	margin-right:8px;
+	/*Is there a way to float right and keep the same resize as Google homeapge?*/
+}
+
+header nav a {
+	text-decoration: none;
+	margin: 3px 3px 6px 9px;
+}
+
+header nav a:focus {
+	outline:none;
+	text-decoration:underline;
+}
+
+header nav a:first-child,
+header nav a:nth-child(2),
+header nav a:nth-child(3) {
+	cursor:pointer;
+	color:#000;
+}
+
+header nav a:nth-child(4),
+header nav a:last-child {
+	cursor:default;
+}
+
+header nav a:nth-child(4) {
+	display:inline-block;
+	position:relative;
+	top:7px;
+	margin-left:10px;
+}
+
+header nav a:last-child {
+	margin-left:12px;
+}
+
+header nav a img {
+	width:23px;
+	height:23px;
+}
+
+header nav a span.button {
+	display:inline-block;
+	color:white;
+	font-weight:bold;
+	background-color:blue;
+	height:20px;
+	width:70px;
+	text-align:center;
+	padding-top:8px;
+	padding-bottom:2px;
+	border-radius:2px;
+	/*Gradient*/
+	background: #4084EA;
+    background: -webkit-linear-gradient(#3090FD, #4084EA);
+    background:    -moz-linear-gradient(#3090FD, #4084EA);
+    background:         linear-gradient(#3090FD, #4084EA);
+
+}
+
+/*---NAV HOVER---*/
+
+header nav a:first-child:hover,
+header nav a:nth-child(2):hover,
+header nav a:nth-child(3):hover {
+	text-decoration:underline;
+}
+
+header nav a:nth-child(4):hover{
+	/*Not sure how to make the image bold when hovering. Is it a separate image?*/
+}
+
+header nav a span.button:hover {
+	box-shadow: 0px 1px 0px #DDD;
+}
+
+/*---Logo Section---*/
+#logo {
+	margin-top:132px;
+	text-align:center;
+	background-color:#fff;
+}
+
+#logo img {
+	width:269px;
+	height:95px;
+}
+
+/*---Search Bar---*/
+#search {
+	height:45px;
+	text-align:center;
+	background-color:#fff;
+	margin-top:22px;
+}
+
+#search input {
+	/*Is there a way to make the background image clickable? or do I need to redo the way I apply this image?*/
+	background-image: url("images/microphone.png");
+	background-repeat:no-repeat;
+	background-position: 99.5% 50%;
+	background-size: 23px 24px;
+	height:25px;
+	width:527px;
+	font-size:17px;
+	font-family:Helvetica;
+	padding-left:6px;
+	padding-right:35px;
+	border:1px solid #DDD;
+	border-top-color: #BBB;
+}
+
+#search input:hover {
+	border:1px solid #777;
+}
+
+#search input:focus {
+	outline:none;
+	border:1px solid #00F;
+}
+
+/*---Button Section---*/
+#btnline {
+	height:70px;
+	text-align:center;
+	background-color:#fff;
+	/*sticky footer attempt*/
+	padding: 0px 0px 40px 0px;
+}
+
+#btnline > #btncontainer {
+	height:55px;
+	width: 350px;
+	margin: auto;
+	background-color:#fff;
+	/*Display as if there is no text to copy or highlight on the buttons*/
+	cursor:default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn {
+	display:inline-block;
+	border:1px solid #DDD;
+	padding:8px 8px;
+	font-weight:bold;
+	font-family:Helvetica;
+	font-size:11px;
+	color:#555;
+	border-radius:2px;
+	margin-right:6px;
+	margin-left:6px;
+	cursor:default;
+	/*Gradient*/
+	background-color:#F1F1F1;
+}
+
+.btn:hover {
+	color:#000;
+	border-color:#CCC;
+	box-shadow: 0px 1px 1px #EEE;
+}
+
+.btn:active {
+	border-color:#00F;
+	/*if you click and drag away on Google the active border remains. How???*/
+}
+
+#btn:focus {
+	outline:none;
+	border:1px solid #00F;
+}
+
+#btncontainer a {
+	outline:none;
+}
+
+/*---Footer Section---*/
+/*sticky footer attempt*/
+div#footer_wrapper {
+	height:40px;
+}
+
+footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height:40px;
+	background-color: #EEE;
+	border-top:1px solid #DDD;
+}
+
+footer .links {
+	padding-top:13px;
+}
+
+footer #left {
+	float:left;
+	height: 27px;
+	width: 278px;
+	text-align:center;
+}
+
+footer #right{
+	height:27px;
+	width:234px;
+	float:right;
+	text-align:center;
+}
+
+footer a {
+	text-decoration:none;
+	color:#555;
+	margin:0px 15px 0px 12px;
+}
+
+footer a:hover {
+	text-decoration:underline;
+}
+
+footer a:active{
+	color:#F00;
+}
